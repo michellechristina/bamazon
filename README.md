@@ -26,7 +26,7 @@ Upon starting the app, we are shown a list of available products and are prompte
 ![purchasing a product](/images/3.png)
 We've made the excellent decision to purchase the super awesome beach ball and are prompted with the question of how many we'd like to purchase. We've conservatively decided on 2 super awesome beach balls.
 
-## Show customer their order total if the order is successfully placed
+## Let the customer place the order if enough inventory is available
 ![purchasing a product](/images/4.png)
 We query the database to check stock levels & determine there are more than 2 in stock. The customer has made a successfull purchase and their order total is displayed.
 
@@ -36,7 +36,7 @@ We will update the stock levels for this particular product during a successful 
 
 ## Let the customer know if there is not enough stock available to make the purchase
 ![update database](/images/6.png)
-Here we attempt to purchase 100 super awesome beach balls.
+Here we attempt to purchase 100 super huge beach balls.
 
 ![update database](/images/7.png)
 Here our dreams of an exciting beach day are shattered.
