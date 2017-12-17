@@ -11,9 +11,10 @@
 
 
 ## How To Set Up & Start The App
-enter the following into your command line:
-*`npm install` & press enter
-*`node app.js` & press enter
+First install your npm packages - enter the following into your command line:
+`npm install` 
+To start the app:
+`node app.js`
 
 ## Query database for products
 ![show product database](/images/1.png)
