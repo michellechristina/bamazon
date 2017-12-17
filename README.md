@@ -10,9 +10,10 @@
 6. [Or let the customer know if there is not enough stock available to make the purchase](#let-the-customer-know-if-there-is-not-enough-stock-available-to-make-the-purchase)
 
 
-## How To Start The App
+## How To Set Up & Start The App
 enter the following into your command line:
-`node app.js`
+`npm install` & press enter
+`node app.js` & press enter
 
 ## Query database for products
 ![show product database](/images/1.png)
