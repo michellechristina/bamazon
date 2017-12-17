@@ -10,7 +10,7 @@
 6. [Or let the customer know if there is not enough stock available to make the purchase] (#let-the-customer-know-if-there-is-not-enough-stock-available-to-make-the-purchase)
 
 [create an anchor](#anchors-in-markdown)
-#Anchors In Markdown
+
 
 # How To Start The App
 enter the following into your command line:
@@ -42,3 +42,5 @@ Here we attempt to purchase 100 super awesome beach balls.
 
 ![update database](/images/7.png)
 Here our dreams of an exciting beach day are shattered.
+
+## Create An Anchor
