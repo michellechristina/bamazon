@@ -9,7 +9,7 @@
 5. [Update the database with new stock levels, upon a sucessful order being placed] (#update-the database-with-new-stock-levels)
 6. [Or let the customer know if there is not enough stock available to make the purchase] (#let-the-customer-know-if-there-is-not-enough-stock-available-to-make-the-purchase)
 
-[create an anchor](#anchors-in-markdown)
+[create an anchor](#create-an-anchor)
 
 
 # How To Start The App
