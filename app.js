@@ -48,17 +48,17 @@ function start() {
         ])
         .then(function(answer) {
           // get the information of the chosen item
-          console.log("results " +results.length);
+        //   console.log("results " +results.length);
           var chosenItem;
           for (var i = 0; i < results.length; i++) {
-            console.log(`${results[i].product_name} : ${answer.products} \n`)
+            // console.log(`${results[i].product_name} : ${answer.products} \n`)
             if (answer.products.includes(results[i].product_name)) {
                
               chosenItem = results[i];
             }
           }
 
-          console.log("chosenitem:" +chosenItem);
+        //   console.log("chosenitem:" +chosenItem);
   
           // determine if bid was high enough
           if (chosenItem.stock_quantity >= parseInt(answer.buy)) {
@@ -75,85 +75,21 @@ function start() {
               ],
               function(error) {
                 if (error) console.log(error);
-                console.log("Sucessful purchase!");
+                console.log("--------------------------");
+                console.log("Thanks for your purchase! \nTotal Cost: $" +answer.buy*chosenItem.price);
+                console.log("--------------------------");
                 start();
               }
             );
           }
           else {
             // bid wasn't high enough, so apologize and start over
+            console.log("--------------------------");
             console.log("Not Enough Stock.");
+            console.log("--------------------------");
             start();
           }
         });
     });
   }
   
-
-// // function which prompts the user for what action they should take
-// function start() {
-//   inquirer
-//     .prompt({
-//       name: "productList",
-//       type: "rawlist",
-//       message: "Select an Item to purchase!",
-//       choices: ["POST", "BID"]
-//     })
-//     .then(function(answer) {
-//       // based on their answer, either call the bid or the post functions
-//       if (answer.postOrBid.toUpperCase() === "POST") {
-//         postAuction();
-//       }
-//       else {
-//         bidAuction();
-//       }
-//     });
-// }
-
-// // function to handle posting new items up for auction
-// function postAuction() {
-//   // prompt for info about the item being put up for auction
-//   inquirer
-//     .prompt([
-//       {
-//         name: "item",
-//         type: "input",
-//         message: "What is the item you would like to submit?"
-//       },
-//       {
-//         name: "category",
-//         type: "input",
-//         message: "What category would you like to place your auction in?"
-//       },
-//       {
-//         name: "startingBid",
-//         type: "input",
-//         message: "What would you like your starting bid to be?",
-//         validate: function(value) {
-//           if (isNaN(value) === false) {
-//             return true;
-//           }
-//           return false;
-//         }
-//       }
-//     ])
-//     .then(function(answer) {
-//       // when finished prompting, insert a new item into the db with that info
-//       connection.query(
-//         "INSERT INTO auctions SET ?",
-//         {
-//           item_name: answer.item,
-//           category: answer.category,
-//           starting_bid: answer.startingBid,
-//           highest_bid: answer.startingBid
-//         },
-//         function(err) {
-//           if (err) throw err;
-//           console.log("Your auction was created successfully!");
-//           // re-prompt the user for if they want to bid or post
-//           start();
-//         }
-//       );
-//     });
-// }
-
