@@ -2,14 +2,12 @@
 *A little inventory & purchasing app*
 
 ## App Capabilities
-1. [Query database for products] (#query-database-for-products)
-2. [Select a product to purchase] (#select-a-product-to-purchase)
-3. [Input a quantity to purchase of said product] (#input-a-quantity-to-purchase-of-said-product)
-4. [Let the customer place the order if enough inventory is available] (#let-the-customer-place-the-order-if-enough-inventory-is-available)
-5. [Update the database with new stock levels, upon a sucessful order being placed] (#update-the database-with-new-stock-levels)
-6. [Or let the customer know if there is not enough stock available to make the purchase] (#let-the-customer-know-if-there-is-not-enough-stock-available-to-make-the-purchase)
-
-[create an anchor](#create-an-anchor)
+1. [Query database for products](#query-database-for-products)
+2. [Select a product to purchase](#select-a-product-to-purchase)
+3. [Input a quantity to purchase of said product](#input-a-quantity-to-purchase-of-said-product)
+4. [Let the customer place the order if enough inventory is available](#let-the-customer-place-the-order-if-enough-inventory-is-available)
+5. [Update the database with new stock levels, upon a sucessful order being placed](#update-the database-with-new-stock-levels)
+6. [Or let the customer know if there is not enough stock available to make the purchase](#let-the-customer-know-if-there-is-not-enough-stock-available-to-make-the-purchase)
 
 
 # How To Start The App
@@ -43,4 +41,3 @@ Here we attempt to purchase 100 super awesome beach balls.
 ![update database](/images/7.png)
 Here our dreams of an exciting beach day are shattered.
 
-## Create An Anchor
